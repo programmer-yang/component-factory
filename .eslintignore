@@ -1,9 +1,0 @@
-_site/*
-bisheng.config.js
-build/*
-gulpfile.js
-webpack.config.js
-packages/*
-config/*
-scripts/*
-components/**/__tests__/*.js
