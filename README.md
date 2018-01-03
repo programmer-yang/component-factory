@@ -10,9 +10,11 @@
 这个项目的目的就是为了让大家把注意力集中在自己写的组件上，其他的事情，它帮你搞定。
 
 
+### 开始使用吧
+
 #### 第一步 clone项目
 ```base
-git clone xxxx.git
+git clone https://github.com/haici/component-factory.git
 ```
 
 > clone到本地后删除.git文件或者修改git的地址为自己项目的地址
