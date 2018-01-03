@@ -1,6 +1,7 @@
 {
   "name": "component-factory",
   "version": "1.0.0",
+  "description": "组件开发、文档、测试、发布整套解决方案",
   "repository": {},
   "license": "MIT",
   "scripts": {
