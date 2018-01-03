@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "bisheng start",
-    "site": "NODE_ENV=production bisheng build --ssr",
+    "site": "NODE_ENV=production bisheng build",
     "build": "npm run test && npm run build-ui && npm run publish",
     "build-ui": "rimraf ./build/lib && babel ./components/ --out-dir ./build/lib --ignore *.md,components/**/__tests --copy-files",
     "publish": "cd ./build && smnp",
