@@ -1,0 +1,45 @@
+@import '../vars.less';
+
+.root {
+  width: 17vw;
+  height: inherit;
+  // padding: 40px 0 0;
+  margin-top: 40px;
+  border-right: 1px solid @c-border;
+  font-family: 'HiFont';
+  ul {
+    padding-left: 40px; 
+    li {
+      .mainMenu {
+        font-size: 16px;
+        color: #333;
+        line-height: 40px;
+        height: 40px;
+        display: block;
+        font-weight: 700;
+        &:hover {
+          color: @c-primary;
+        }
+        &.active {
+          color: @c-primary;
+        }
+      }
+      .componentMenu {
+        color: #555;
+        font-size: 14px;
+        line-height: 40px;
+        height: 40px;
+        display: block;
+        font-weight: 200;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        &:hover {
+          color: @c-primary;
+        }
+        &.active {
+          color: @c-primary;
+        }
+      }
+    }
+  }
+}

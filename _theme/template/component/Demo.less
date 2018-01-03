@@ -1,0 +1,35 @@
+@import '../vars.less';
+
+.root {
+  padding: 10px 20px;
+  border: 1px solid @c-border;
+  border-radius: 4px;
+  .demo {
+    padding: 20px 0;
+  }
+  .info {
+    border-top: 1px solid @c-border;
+    margin-top: 10px;
+    padding-top: 10px;
+    position: relative;
+    .action {
+      position: absolute;
+      right: 16px;
+      bottom: -8px;
+      cursor: pointer;
+      width: 16px;
+      height: 16px;
+      line-height: 16px;
+      text-align: center;
+    }
+  }
+  .code {
+    display: none;
+    border-top: 1px dotted @c-border;
+    margin-top: 10px;
+    padding-top: 10px;
+    &.show {
+      display: block;
+    }
+  }
+}

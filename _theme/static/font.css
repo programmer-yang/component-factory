@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'HiFont';
+  src: url('./fonts/HiFont.eot');
+  src: url('./fonts/HiFont.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/HiFont.woff') format('woff'),
+  url('./fonts/HiFont.ttf') format('truetype'),
+  url('./fonts/HiFont.svg#NeuesBauenDemo') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

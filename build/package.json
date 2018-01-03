@@ -1,0 +1,11 @@
+{
+  "name": "hc-test-components",
+  "version": "0.0.1-bate.3",
+  "description": "test",
+  "main": "lib/index.js",
+  "repository": {},
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^7.2.3"
+  }
+}

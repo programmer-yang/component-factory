@@ -1,0 +1,20 @@
+@import '../vars.less';
+
+.root {
+  display: flex;
+  min-height: inherit;
+  .content {
+    width: 83vw;
+    min-height: inherit;
+    padding: 40px;
+    background-color: #fff;
+    :global {  // 覆盖markdown-body下的样式
+      .markdown-body {
+        font-size: 14px;
+        h1,h2,h3,h4,h5 {
+          border: 0;
+        }
+      }
+    }
+  }
+}
