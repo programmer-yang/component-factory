@@ -6,12 +6,13 @@
   "license": "MIT",
   "scripts": {
     "start": "bisheng start",
-    "site": "NODE_ENV=production bisheng build",
+    "site": "NODE_ENV=production bisheng build && gh-pages -d _site",
     "build": "npm run test && npm run build-ui && npm run publish",
     "build-ui": "rimraf ./build/lib && babel ./components/ --out-dir ./build/lib --ignore *.md,components/**/__tests --copy-files",
     "publish": "cd ./build && smnp",
     "test": "node scripts/test.js --env=jsdom --config=.jest.js"
   },
+  "homepage": "https://haici.github.io/component-factory/",
   "dependencies": {
     "autoprefixer": "^7.2.3",
     "babel-cli": "^6.26.0",
@@ -34,6 +35,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1",
     "file-loader": "^1.1.6",
+    "gh-pages": "^1.1.0",
     "github-markdown-css": "^2.9.0",
     "gulp": "^3.9.1",
     "gulp-cssmin": "^0.2.0",
