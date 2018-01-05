@@ -1,6 +1,12 @@
 const { resolve } = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = {
+// if (typeof window === 'undefined' && typeof global === 'object') {
+//   global.window = {};
+//   global.document = {};
+// }
+
+const bishengConfig = {
   port: 8002,
   source: {
     components: './components',
@@ -22,6 +28,7 @@ module.exports = {
     github: 'https://github.com/benjycui/bisheng',
   },
   webpackConfig(config) {
+    // config.output.publicPath = '/component-factory/'
     config.module.rules[11].test = function (filePath) {
       return (/\.less$/.test(filePath) && !/\.module\.less$/.test(filePath) && !/_theme\/.+\.less/.test(filePath));
     }
@@ -46,6 +53,30 @@ module.exports = {
         },
       ],
     });
+    // // 添加hash处理
+    // const htmlWebpackPlugin = new HtmlWebpackPlugin({
+    //   template: './_theme/static/template.html',
+    //   hash: true,
+    //   // inject: false,
+    //   minify: {
+    //     collapseBooleanAttributes: true,
+    //   },
+    // });
+    // config.plugins.push(htmlWebpackPlugin);
     return config;
-  },
+  }
 };
+
+
+if (process.env.NODE_ENV) {
+  bishengConfig.htmlTemplateExtraData = {
+    root: '/component-factory/'
+  };
+  bishengConfig.root = '/component-factory/';
+} else {
+  // bishengConfig.htmlTemplateExtraData = {
+  //   root: '/'
+  // }
+}
+
+module.exports = bishengConfig;
