@@ -46,7 +46,7 @@ module.exports = function transformer(
   code,
   babelConfig = {},
   noreact,
-  sourceCode,
+  sourceCode
 ) {
   let codeAst = null;
   try {
