@@ -19,7 +19,9 @@ class Home extends React.Component {
   render() {
     return (
       <div className={styles.root}>
-        <h1>COMPONENT 1.0</h1>
+        <div>
+          <h1>COMPONENT 1.0</h1>
+        </div>
         {/* <div className="container">
           <canvas ref={(e) => { this.DOMCanvas = e }} />
         </div> */}
