@@ -1,6 +1,7 @@
 import React from 'react'
 import collect from 'bisheng/collect'
 import 'github-markdown-css/github-markdown.css'
+import '../../static'
 import './markdown.css'
 import Menu from './Menu'
 import Content from './Content'
@@ -8,7 +9,6 @@ import Content from './Content'
 import styles from './Component.less'
 
 const Component = (props) => {
-  console.log(props)
   const { utils, pageData, picked } = props
   // console.log(props)
   // pageData.content.forEach(item => typeof item === 'function' && console.log(item()))
